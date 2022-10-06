@@ -29,6 +29,7 @@ Example use cases:
 [ot,cvt] = NucCytoShuttleModel(1,’NUPs’,2600);
 
 % Split the number of NUPs into separate classes
+
 [ot,cvt] = NucCytoShuttleModel(1,’NUPs’,[1300; 1300]);
 
 
