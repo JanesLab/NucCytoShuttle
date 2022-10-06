@@ -31,5 +31,7 @@ Example use cases:
 Extensions:
 
 • NucCytoSensitivityAnalysis.m is a single-parameter sensitivity analysis for each B2B1 species concentration over at 32-fold range
+
 • NucCytoShuttleERBBfbModel.m runs similarly to NucCytoShuttleModel.m but uses NucCytoShuttleERBBfbODE.m to add proportional feedbacks from cytoplasmic cargo to Cas (positive feedback) and from nuclear cargo to Impalpha (negative feedback).  Additionally, it accepts an “NLSparams” input for on-off rates of high-affinity NLS cargo.
+
 • NucCytoSensitivityAnalysisERBBfb.m runs similarly to NucCytoSensitivityAnalysis.m but additionally relies on an ancillary file (NLS_variant_parameters.xlsx), which sweeps through a plausible range NLS affinities by changing the fast off rate.
