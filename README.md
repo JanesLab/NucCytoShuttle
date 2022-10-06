@@ -13,18 +13,23 @@ The function outputs a table of seven tables, each corresponding to the time evo
 Example use cases:
 
 % Simulate 1 µM spike and return the results to output table “ot” and cell volume table “cvt”
+
 [ot,cvt] = NucCytoShuttleModel(1);
 
 % Replace with the cell geometries of B2B1 cells
+
 [ot,cvt] = NucCytoShuttleModel(1,’CellType’,[0.52 1.45]);
 
 % Replace with species concentrations of B2B1 cells
+
 [ot,cvt] = NucCytoShuttleModel(1,’CellConcs’,[5.18; 2.69; 0.85; 0.45; 0.81; 1.52; 2.77; 5.26; 0.50; 0.15],’LumpedReceptors’,[10; 5; 6; 1]);
 
 % Replace with NUPs of B2B1 cells
+
 [ot,cvt] = NucCytoShuttleModel(1,’NUPs’,2600);
 
 % Split the number of NUPs into separate classes
+
 [ot,cvt] = NucCytoShuttleModel(1,’NUPs’,[1300; 1300]);
 
 
