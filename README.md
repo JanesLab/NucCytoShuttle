@@ -19,17 +19,17 @@ Example use cases:
 (Run time on an Apple M1 Pro with 32 GB memory:  18 seconds.  Saved as NucCytoShuttleCase1.mat)
 
 %Case 2: Replace with the cell geometries of B2B1 cells
-[ot,cvt] = NucCytoShuttleModel(1,’CellType’,[0.52 1.45]);
+[ot,cvt] = NucCytoShuttleModel(1,'CellType',[0.52 1.45]);
 (Run time on an Apple M1 Pro with 32 GB memory:  17 seconds.  Saved as NucCytoShuttleCase2.mat)
 
 %Case 3: Replace with species concentrations of B2B1 cells
-[ot,cvt] = NucCytoShuttleModel(1,’CellConcs’,[5.18; 2.69; 0.85; 0.45; 0.81; 1.52; 2.77; 5.26; 0.50; 0.15],’LumpedReceptors’,[10; 5; 6; 1]);
+[ot,cvt] = NucCytoShuttleModel(1,'CellConcs',[5.18; 2.69; 0.85; 0.45; 0.81; 1.52; 2.77; 5.26; 0.50; 0.15],'LumpedReceptors',[10; 5; 6; 1]);
 (Run time on an Apple M1 Pro with 32 GB memory:  20 seconds.  Saved as NucCytoShuttleCase3.mat)
 
 %Case 4: Replace with NUPs of B2B1 cells
-[ot,cvt] = NucCytoShuttleModel(1,’NUPs’,2600);
+[ot,cvt] = NucCytoShuttleModel(1,'NUPs',2600);
 (Run time on an Apple M1 Pro with 32 GB memory:  16 seconds.  Saved as NucCytoShuttleCase4.mat)
 
 %Case 5: Split the number of NUPs into separate classes
-[ot,cvt] = NucCytoShuttleModel(1,’NUPs’,[1300; 1300]);
+[ot,cvt] = NucCytoShuttleModel(1,'NUPs',[1300; 1300]);
 (Run time on an Apple M1 Pro with 32 GB memory:  29 seconds.  Saved as NucCytoShuttleCase5.mat)
